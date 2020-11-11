@@ -9,10 +9,23 @@ ion-menu ion-item {
   --inner-padding-end: 0px;
   --border-radius: 4px;
 
-  margin-bottom: 16px;
+  padding-bottom: 16px;
 
   text-align: center;
   font-size: 14px;
+}
+
+ion-menu ion-list {
+  background-color: var(--ion-color-primary);
+}
+
+ion-menu ion-item {
+  --background: var(--ion-color-primary);
+  --color: var(--ion-color-primary-contrast);
+}
+
+ion-menu ion-item.selected {
+  --background: var(--ion-color-primary-shade);
 }
 
 ion-menu ion-item ion-icon {
