@@ -11,16 +11,5 @@
     <h1 class="desktop">{{ title }}</h1>
   </ion-text>
 
-  <div id="container">
-    <strong class="capitalize">{{ title }}</strong>
-    <p>
-      Explore
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://ionicframework.com/docs/components"
-        >UI Components</a
-      >
-    </p>
-  </div>
+  <app-content-placeholder [title]="title"></app-content-placeholder>
 </ion-content>
