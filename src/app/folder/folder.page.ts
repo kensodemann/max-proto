@@ -7,11 +7,21 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./folder.page.scss'],
 })
 export class FolderPage implements OnInit {
+  private titles: Map<string, string>;
   public title: string;
 
-  constructor(private activatedRoute: ActivatedRoute) {}
+  constructor(private activatedRoute: ActivatedRoute) {
+    this.titles = new Map();
+    this.titles.set('home', 'My Account');
+    this.titles.set('claim', 'New Claim');
+    this.titles.set('my-claims', 'My Claims');
+    this.titles.set('my-coverage', 'My Coverage');
+    this.titles.set('contact', 'Contact Us');
+    this.titles.set('messages', 'Messages');
+  }
 
   ngOnInit() {
-    this.title = this.activatedRoute.snapshot.paramMap.get('id');
+    const id = this.activatedRoute.snapshot.paramMap.get('id');
+    this.title = this.titles.get(id);
   }
 }

@@ -16,12 +16,7 @@
               [class.selected]="selectedIndex == i"
             >
               <ion-label>
-                <ion-icon
-                  slot="start"
-                  [ios]="p.icon + '-outline'"
-                  [md]="p.icon + '-sharp'"
-                ></ion-icon
-                ><br />
+                <ion-icon slot="start" [name]="p.icon"></ion-icon><br />
                 {{ p.title }}
               </ion-label>
             </ion-item>

@@ -9,34 +9,34 @@ export class AppComponent implements OnInit {
   public selectedIndex = 0;
   public appPages = [
     {
-      title: 'Inbox',
-      url: '/folder/Inbox',
-      icon: 'mail',
+      title: 'Home',
+      url: '/folder/home',
+      icon: 'home-outline',
     },
     {
-      title: 'Outbox',
-      url: '/folder/Outbox',
-      icon: 'paper-plane',
+      title: 'New Claim',
+      url: '/folder/claim',
+      icon: 'create-outline',
     },
     {
-      title: 'Favorites',
-      url: '/folder/Favorites',
-      icon: 'heart',
+      title: 'My Claims',
+      url: '/folder/my-claims',
+      icon: 'document-text-outline',
     },
     {
-      title: 'Archived',
-      url: '/folder/Archived',
-      icon: 'archive',
+      title: 'My Coverage',
+      url: '/folder/my-coverage',
+      icon: 'person-outline',
     },
     {
-      title: 'Trash',
-      url: '/folder/Trash',
-      icon: 'trash',
+      title: 'Cantact Us',
+      url: '/folder/contact',
+      icon: 'chatbox-outline',
     },
     {
-      title: 'Spam',
-      url: '/folder/Spam',
-      icon: 'warning',
+      title: 'Messages',
+      url: '/folder/messages',
+      icon: 'mail-outline',
     },
   ];
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
