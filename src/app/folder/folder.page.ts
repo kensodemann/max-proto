@@ -8,6 +8,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class FolderPage implements OnInit {
   private titles: Map<string, string>;
+  public showCards: boolean;
   public title: string;
 
   constructor(private activatedRoute: ActivatedRoute) {
@@ -22,6 +23,7 @@ export class FolderPage implements OnInit {
 
   ngOnInit() {
     const id = this.activatedRoute.snapshot.paramMap.get('id');
+    this.showCards = id === 'home';
     this.title = this.titles.get(id);
   }
 }

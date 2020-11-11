@@ -11,5 +11,9 @@
     <h1 class="desktop">{{ title }}</h1>
   </ion-text>
 
-  <app-content-placeholder [title]="title"></app-content-placeholder>
+  <app-content-placeholder
+    *ngIf="!showCards"
+    [title]="title"
+  ></app-content-placeholder>
+  <app-home-layout *ngIf="showCards"></app-home-layout>
 </ion-content>

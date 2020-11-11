@@ -1,0 +1,36 @@
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+
+  max-width: 1024px;
+
+  margin: 0 auto;
+}
+
+.info-item {
+  margin-bottom: 16px;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--ion-color-primary);
+  text-transform: uppercase;
+}
+
+.cards ion-card {
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.cards ion-card.size-large {
+  height: 300px;
+}
+
+.cards ion-card.size-medium {
+  height: 200px;
+}
+
+.cards ion-card.size-small {
+  height: 100px;
+}
