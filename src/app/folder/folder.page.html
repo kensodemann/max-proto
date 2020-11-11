@@ -1,5 +1,9 @@
 <ion-header [translucent]="true">
-  <app-mobile-toolbar [title]="folder"></app-mobile-toolbar>
+  <app-desktop-toolbar
+    class="desktop"
+    [username]="'Joseph'"
+  ></app-desktop-toolbar>
+  <app-mobile-toolbar class="mobile" [title]="folder"></app-mobile-toolbar>
 </ion-header>
 
 <ion-content class="main-content" [fullscreen]="true">
