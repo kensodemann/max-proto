@@ -3,18 +3,16 @@
     class="desktop"
     [username]="'Joseph'"
   ></app-desktop-toolbar>
-  <app-mobile-toolbar class="mobile" [title]="folder"></app-mobile-toolbar>
+  <app-mobile-toolbar class="mobile" [title]="title"></app-mobile-toolbar>
 </ion-header>
 
-<ion-content class="main-content" [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">{{ folder }}</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content class="ion-padding main-content" [fullscreen]="true">
+  <ion-text color="primary">
+    <h1 class="desktop">{{ title }}</h1>
+  </ion-text>
 
   <div id="container">
-    <strong class="capitalize">{{ folder }}</strong>
+    <strong class="capitalize">{{ title }}</strong>
     <p>
       Explore
       <a
