@@ -1,0 +1,38 @@
+ion-toolbar {
+  padding: 20px !important;
+}
+
+.logo {
+  height: 50px;
+  width: 150px;
+
+  color: white;
+  background: gray;
+
+  text-align: center;
+  line-height: 50px;
+  float: left;
+}
+
+.search,
+.account {
+  float: right;
+}
+
+.search {
+  margin-right: 20px;
+  width: 250px;
+}
+
+.account ion-item {
+  display: inline-block;
+  text-align: left;
+}
+.account ion-icon[slot='end'] {
+  margin-inline-start: 2px;
+
+  font-size: 16px;
+}
+.account ion-icon[slot='start'] {
+  margin-inline-end: 6px;
+}
